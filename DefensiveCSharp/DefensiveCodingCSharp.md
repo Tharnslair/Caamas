@@ -50,4 +50,10 @@ Clean methods lead to clean application
 - Automated Code Test
 	- not easy to test code in a code behind file
 
+**Repository Pattern**
+
+- Pattern - predefined way to build a set of code for a specific purpose
+- specific set of classes that handle data access for application
+- sole purpose is to hide the details of accessing the data in one place separate from entity classes
+
 ---
