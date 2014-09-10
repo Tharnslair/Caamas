@@ -41,8 +41,7 @@ namespace ACM.Win
 
             var orderController = new OrderController();
             orderController.PlaceOrder(customer, order, payment,
-                allowSplitOrders: false,
-                emailReceipt: true);
+                allowSplitOrders: false, emailReceipt: true); // allowSplitOrders: false, emailReceipt: true
         }
 
     }
