@@ -56,4 +56,11 @@ Clean methods lead to clean application
 - specific set of classes that handle data access for application
 - sole purpose is to hide the details of accessing the data in one place separate from entity classes
 
+**Refactoring**
+
+- Class Library -- contains any non UI code
+	-	easier to reuse any methods in class libraries
+- Methods need to be long enough to relay what the method does!!!
+- any code that performs CRUD operations on data will be in the repository classes
+
 ---

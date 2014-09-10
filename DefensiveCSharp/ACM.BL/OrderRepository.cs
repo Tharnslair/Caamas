@@ -8,6 +8,7 @@ namespace ACM.BL
 {
     public class OrderRepository
     {
+
         public void Add(Order order)
         {
             // -- Create the order for the customer. --
@@ -17,8 +18,7 @@ namespace ACM.BL
             // If valid,
             // Open a connection
             // Set stored procedure parameters with the order data.
-            // Call the save stored procedure.
-
+            // Call the save stored procedure.            
         }
     }
 }
