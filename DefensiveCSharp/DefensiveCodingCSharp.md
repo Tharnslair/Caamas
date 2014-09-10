@@ -64,3 +64,19 @@ Clean methods lead to clean application
 - any code that performs CRUD operations on data will be in the repository classes
 
 ---
+
+###Defensive Coding
+---
+
+##### Add guards to check incoming parameters 
+
+- Garbage in...Garbage out
+- invalid, null, or unexpected values
+- only let in params that are valid
+- code statements that validate incoming parameters at the top of methods are called "guard clauses"
+	- minimizes number of params
+	- consistent parameter ordering
+
+**You change the startup form in the Program.cs file!!!**
+
+---
