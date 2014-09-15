@@ -100,6 +100,28 @@ Top way of defensive coding is Unit Testing...unit testing and unit Testing
 - Act
 - Assert
 
+**Focus on Unit Testing**
+---
+
+- Code Under test
+
+**Code First**
+
+- Requirements
+- Methods
+- Testing
+
+**Test First**
+
+- Hmmm
+
+**Methodology**
+
+- Valid Inputs
+- Invalid Inputs
+- Guard Clause
+- Assumptions
+- Bug Fixes
 
 
 ---
