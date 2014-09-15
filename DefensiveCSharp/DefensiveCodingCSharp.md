@@ -79,4 +79,27 @@ Clean methods lead to clean application
 
 **You change the startup form in the Program.cs file!!!**
 
+#### Method Overriding
+---
+
+- same operation with different types of inputs???
+
+**Design By Contract**
+
+- What does a method expect? (accepted and unacceptable inputs)
+- What does a method guarantee? (promised returned value, error, or exceptions)
+- What does a method maintain? (any properties used or set by the method)
+
+---
+###Automated Code Testing
+---
+
+Top way of defensive coding is Unit Testing...unit testing and unit Testing
+
+- Arrange
+- Act
+- Assert
+
+
+
 ---
