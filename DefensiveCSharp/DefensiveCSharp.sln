@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.BL", "ACM.BL\ACM.BL.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Common", "Core.Common\Core.Common.csproj", "{124CE0C0-118B-4D8F-839B-BF35EC09FE12}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Projects", "Test Projects", "{1F6EB200-DA7B-4AEA-B7E2-6B693C9594CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.BL.TESTS", "ACM.BL.TESTS\ACM.BL.TESTS.csproj", "{329A5BD5-4821-4A14-9645-A2D70F14D008}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,15 @@ Global
 		{124CE0C0-118B-4D8F-839B-BF35EC09FE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{124CE0C0-118B-4D8F-839B-BF35EC09FE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{124CE0C0-118B-4D8F-839B-BF35EC09FE12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{329A5BD5-4821-4A14-9645-A2D70F14D008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329A5BD5-4821-4A14-9645-A2D70F14D008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329A5BD5-4821-4A14-9645-A2D70F14D008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329A5BD5-4821-4A14-9645-A2D70F14D008}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{329A5BD5-4821-4A14-9645-A2D70F14D008} = {1F6EB200-DA7B-4AEA-B7E2-6B693C9594CF}
 	EndGlobalSection
 EndGlobal
