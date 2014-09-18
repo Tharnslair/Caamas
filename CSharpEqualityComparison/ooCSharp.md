@@ -30,4 +30,23 @@ Tips
 
 ---
 
+#### Other Terms
+
+Method Signature
+
+- the name and type of its formal parameters
+- does not include return type
+
+Overloading
+
+- methods that have the same name, but different parameters
+
+Contract
+
+- all of the properties and methods defined using public access modifier
+- class makes a promise to supply the props and methods to any other code that needs them
+- class interface???
+
+
+
 ---
