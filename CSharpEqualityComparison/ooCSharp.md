@@ -1,5 +1,7 @@
-# Object Oriented C#
+# Object Oriented C Sharp
 ---
+
+> Ylix Content Management (Ylix is a planet in the star wars universe)
 
 ### Building the Business Layer
 ---
@@ -21,6 +23,10 @@ The static modifier
 
     public static int InstanceCount { get; set; }
     Customer.InstanceCount += 1;
+
+Tips
+
+- as you are coding considering writing the test right after writing the code!!!
 
 ---
 
