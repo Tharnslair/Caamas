@@ -8,6 +8,16 @@ namespace YCM.BL
 {
     public class Customer
     {
+        // Default Constructor...no parameters
+        public Customer()
+        {
+                
+        }
+        public Customer(int customerId)
+        {
+            this.CustomerId = customerId;
+        }
+
         // member
         public static int InstanceCount { get; set; }
 

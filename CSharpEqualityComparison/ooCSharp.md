@@ -47,6 +47,8 @@ Contract
 - class makes a promise to supply the props and methods to any other code that needs them
 - class interface???
 
+Constructors
 
+- no parameters is the default constructor
 
 ---
