@@ -41,7 +41,7 @@ namespace ACM.BL
         public decimal CalculatePercentOfGoalSteps(decimal goalStepCount, decimal actualStepCount)
         {
             if (goalStepCount <= 0) throw new ArgumentException("Goal must be greater than 0", "goalSteps");
-            return (actualStepCount / goalStepCount) * 100;
+            return Math.Round((actualStepCount / goalStepCount) * 100, 2); // * 100
         }
     }
 }

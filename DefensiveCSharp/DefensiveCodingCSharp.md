@@ -123,5 +123,7 @@ Top way of defensive coding is Unit Testing...unit testing and unit Testing
 - Assumptions
 - Bug Fixes
 
+**MAKE SURE YOU ADD [TestMethod] to your tests**
 
+9/19/2014 4:08:16 PM 
 ---
