@@ -59,16 +59,16 @@ namespace YCM.BL
             }
         }
 
-        public Customer Retrieve(int customerId)
-        {
-                // Code that retrieves the defined customer
-                return new Customer();
-        }
-        public List<Customer> Retrieve()
-        {
-            // Code that retrieves all customers
-            return new List<Customer>();
-        }
+        //public Customer Retrieve(int customerId)
+        //{
+        //        // Code that retrieves the defined customer
+        //        return new Customer();
+        //}
+        //public List<Customer> Retrieve()
+        //{
+        //    // Code that retrieves all customers
+        //    return new List<Customer>();
+        //}
         public bool Validate()
         {
             var isValid = true;

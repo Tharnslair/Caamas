@@ -52,3 +52,19 @@ Constructors
 - no parameters is the default constructor
 
 ---
+
+## Separating Responsibilities
+
+**Classes are coupled to the Data Access Layer (DAL)
+
+- Extract Retrieve and Save operations into a separate class
+- Low coupling = high Cohesion (feature requests only touch a fewer number of classes)
+
+#### Design Patterns
+
+- common practices for designing a set of classes
+- Repository Pattern 
+	- 
+---
+
+---
