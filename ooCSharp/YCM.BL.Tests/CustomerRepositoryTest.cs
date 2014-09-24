@@ -10,7 +10,7 @@ namespace YCM.BL.Tests
         [TestMethod]
         public void RetrieveExisting()
         {
-            // Arrange
+            // Arrange 
             var cr = new CustomerRepository();
             var expected = new Customer(1)
             {
@@ -23,7 +23,7 @@ namespace YCM.BL.Tests
             var actual = cr.Retrieve(1);
 
             // Assert
-            // Assert.AreEqual(expected, actual);
+            //Assert.AreEqual(expected, actual);
             Assert.AreEqual(expected.CustomerId, actual.CustomerId);
             Assert.AreEqual(expected.EmailAddress, actual.EmailAddress);
             Assert.AreEqual(expected.FirstName, actual.FirstName);

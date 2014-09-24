@@ -61,10 +61,22 @@ Constructors
 - Low coupling = high Cohesion (feature requests only touch a fewer number of classes)
 
 #### Design Patterns
-
+---
 - common practices for designing a set of classes
 - Repository Pattern 
-	- 
+
+---
+	
+### Defining Relationships
+--- 
+
+**Object Relationships**
+
+- Collaboration (Uses A) relationship [CustomerRepository |uses| Customer]
+- Composition (has A) relationship [Order|has| Customer, OrderItem, Address]
+	- Aggregation
+- 
+
 ---
 
 ---
