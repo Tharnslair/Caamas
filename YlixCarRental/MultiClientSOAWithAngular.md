@@ -126,4 +126,34 @@ ___
 See db :)
 
 ---
+
+## Entity Structure
+---
+
+**Two sets of entities**
+
+- Business side
+- Client side
+- each travels up & down its tiers
+- Passed by services and proxies
+- each set of entities has knowledge it needs to service its side of the service wall
+- Entities will be "equivalent"
+	- Namespace equivalency will be handled in AssembyInfo.cs file
+
+**DataContracts**
+
+- DataMembers - inside the class
+
+If a class is decorated with DataContract then any member you want to put in serialization will need to used DataMember
+
+**Why used a different syntax for Business and another for the client???***
+
+- Business is going to be a lot simpler...carry data along business side
+- Client more functionality binding scenarios with web or XAML
+
+**Inferred DataContract**
+
+- Doesn't visually pollute the class
+
+---
 ___

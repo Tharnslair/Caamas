@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YCR.Business.entities
 {
-    public class Class1
+    public class Reservation
     {
     }
 }

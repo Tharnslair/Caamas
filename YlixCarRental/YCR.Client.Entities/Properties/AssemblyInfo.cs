@@ -5,13 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-using System.Runtime.Serialization;
-
-[assembly: AssemblyTitle("YCR.Business.entities")]
+[assembly: AssemblyTitle("YCR.Client.Entities")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("YCR.Business.entities")]
+[assembly: AssemblyProduct("YCR.Client.Entities")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -22,7 +20,7 @@ using System.Runtime.Serialization;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("9efe4fa0-fd5b-4ef8-8165-61944a88ac03")]
+[assembly: Guid("70df3a11-395b-4aad-9f94-861b2533a1a0")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -38,4 +36,4 @@ using System.Runtime.Serialization;
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
 [assembly: ContractNamespace("http://localhost/YlixCarRental",
-    ClrNamespace = "YCR.Business.Entities")]
+    ClrNamespace = "YCR.Client.Entities")]
