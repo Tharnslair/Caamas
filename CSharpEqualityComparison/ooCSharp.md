@@ -75,7 +75,7 @@ Constructors
 - Collaboration (Uses A) relationship [CustomerRepository |uses| Customer]
 - Composition (has A) relationship [Order|has| Customer, OrderItem, Address]
 	- Aggregation
-- 
+- IEnumberable -- recommended way to return a sequence of data
 
 ---
 

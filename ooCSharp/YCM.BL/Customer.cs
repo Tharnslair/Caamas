@@ -16,9 +16,12 @@ namespace YCM.BL
         public Customer(int customerId)
         {
             this.CustomerId = customerId;
+            AddressList = new List<Address>();
         }
 
-        // member
+        // members
+
+        public List<Address> AddressList { get; set; } 
         public static int InstanceCount { get; set; }
 
         private string _lastName;

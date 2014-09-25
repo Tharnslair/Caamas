@@ -8,6 +8,13 @@ namespace YCM.BL
 {
     public class CustomerRepository
     {
+        private AddressRepository ar { get; set; }
+
+        public CustomerRepository()
+        {
+            ar = new AddressRepository();
+        }
+
         /// <summary>
         /// Retrieve one customer.
         /// </summary>
@@ -15,6 +22,7 @@ namespace YCM.BL
         {
             // Create the instance of the Customer class
             Customer customer = new Customer(customerId);
+            customer.AddressList = ar.RetrieveByCustomerId(customerId).ToList();
 
             // Code that retrieves the defined customer
 
