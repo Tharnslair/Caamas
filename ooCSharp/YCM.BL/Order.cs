@@ -12,12 +12,11 @@ namespace YCM.BL
     using System.Text;
     using System.Threading.Tasks;
 
-    namespace ACM.BL
+    namespace YCM.BL
     {
         public class Order
         {
-            public Order()
-            {
+            public Order(){
 
             }
 
@@ -26,8 +25,11 @@ namespace YCM.BL
                 this.OrderId = orderId;
             }
 
+            public int CustomerId { get; set; }
+            public int ShippingAddressId { get; set; }
             public DateTimeOffset? OrderDate { get; set; }
             public int OrderId { get; private set; }
+            public List<OrderItem> orderItems { get; set; } 
 
             /// <summary>
             /// Retrieve one order.

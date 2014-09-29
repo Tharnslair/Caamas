@@ -16,9 +16,9 @@ namespace YCM.BL.Tests
             var customerRepository = new CustomerRepository();
             var expected = new Customer(1)
             {
-                EmailAddress = "fbaggins@hobbiton.me",
-                FirstName = "Frodo",
-                LastName = "Baggins"
+                EmailAddress = "chorn@corsec.net",
+                FirstName = "Corran",
+                LastName = "Horn"
             };
 
             //-- Act
