@@ -10,10 +10,11 @@ namespace YCM.BL
     {
         // Default Constructor...no parameters
         public Customer()
+            : this(0) // Chaining constructors Default const calls parameterized constructor 
         {
                 
         }
-        public Customer(int customerId)
+        public Customer(int customerId) // parameterized constructor
         {
             this.CustomerId = customerId;
             AddressList = new List<Address>();
