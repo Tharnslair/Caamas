@@ -7,6 +7,7 @@
     <!-- Style sheets -->
     <link href="css/bootstrap.css" rel="stylesheet"/> 
     <link href="css/app.css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Library Scripts -->
     <script src="js/angular.js"></script> 
@@ -15,95 +16,63 @@
     <script src="app/app.js"></script> 
 
     <!-- Product Controllers -->
-    <!--<script src="app/products/productListCtrl.js"></script> -->
+    <script src="app/products/alobProductListCtrl.js"></script> 
 </head>
 
 <body ng-app="alobProductManagement">
 
-<!--     <table>
+    <div class="panel panel-primary">
 
-        <thead>
+        <div class="panel-heading" style="font-size:large">
 
-            <tr>
-                <td>Image</td>
-                <td>Product</td>
-                <td>Code</td>
-                <td>Available</td>
-                <td>Price</td>
-            </tr>
+            Product List
 
-        </thead>
-        <tbody>
+        </div>
 
-            <tr ng-repeat="product in products">
-                <td>
-                    <img src="{{product.imageUrl}}" title="{{product.productName}}">
-                </td>
-                <td>{{product.productName}}</td>
-                <td>{{product.productCode}}</td>
-                <td>{{product.releaseDate}}</td>
-                <td>{{product.price | currency}}</td>
-            </tr>
+        <div class="panel-body">
 
-        </tbody>
+            <table ng-controller="alobProductListCtrl as vm">
 
-    </table> -->
+                <thead>
 
-    <table ng-init='products = [
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-primary" ng-click="vm.toggleImage()"> <!-- <i class="fa fa-picture-o fa-fw"></i> -->
+                                 
+                                 {{ vm.showImage ? "Hide" : "Show" }} Image
+                            </button>
+                        </td>
+                        <td>Product</td>
+                        <td>Code</td>
+                        <td>Available</td>
+                        <td>Price</td>
+                    </tr>
 
-            {" productId": 1,
-                "productName": "Leaf Rake",
-                "productCode": "GDN-0011",
-                "releaseDate": "March 19, 2009",
-                "description": "Leaf rake with 48-inch handle.",
-                "cost": 9.00,
-                "price": 19.95,
-                "category": "garden",
-                "tags": [ "leaf", "tool" ],
-                "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
-            },
-            {
-                "productId": 5,
-                "productName": "Hammer",
-                "productCode": "TBX-0048",
-                "releaseDate": "May 21, 2013",
-                "description": "Curved claw steel hammer",
-                "cost": 1.00,
-                "price": 8.99,
-                "category": "toolbox",
-                "tags": ["tool"],
-                "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+                </thead>
+                <tbody>
 
-    }]'>
+                    <tr ng-repeat="product in vm.products">
+                        <td>
+                            <img ng-if="vm.showImage"
+                                 ng-src="{{product.imageUrl}}"
+                                 style="width:50px;margin:2px"
+                                 title="{{product.productName}}">
+                        </td>
+                        <td>{{product.productName}}</td>
+                        <td>{{product.productCode}}</td>
+                        <td>{{product.releaseDate}}</td>
+                        <td>{{product.price | currency}}</td>
+                    </tr>
 
-        <thead>
+                </tbody>
 
-            <tr>
-                <td>Image</td>
-                <td>Product</td>
-                <td>Code</td>
-                <td>Available</td>
-                <td>Price</td>
-            </tr>
+            </table>
 
-        </thead>
-        <tbody>
+        </div>
 
-            <tr ng-repeat="product in products">
-                <td>
-                    <img ng-src="{{product.imageUrl}}"
-                         style="width:50px;margin:2px"
-                         title="{{product.productName}}">
-                </td>
-                <td>{{product.productName}}</td>
-                <td>{{product.productCode}}</td>
-                <td>{{product.releaseDate}}</td>
-                <td>{{product.price | currency}}</td>
-            </tr>
+    </div>
 
-        </tbody>
 
-    </table>
 
 </body>
 
