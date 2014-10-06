@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ALOB Product Management</title>
+
+    <!-- Style sheets -->
+    <link href="css/bootstrap.css" rel="stylesheet"/> 
+    <link href="css/app.css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Library Scripts -->
+    <script src="js/angular.js"></script> 
+    <script src="js/angular-resource.js"></script> 
+
+    <!-- Application Scripts -->
+    <script src="app/app.js"></script> 
+
+    <!-- Service Scripts -->
+    <script src="common/services/common.services.js"></script>
+    <script src="common/services/alobProductResource.js"></script>
+    <script src="common/services/alobProductResourceMock.js"></script> 
+
+    <!-- Product Controllers -->
+    <script src="app/products/alobProductListCtrl.js"></script> 
+</head>
+
+<body ng-app="alobProductManagement">
+
+    <div class="panel panel-primary">
+
+        <div class="panel-heading" style="font-size:large">
+
+            Product List
+
+        </div>
+
+        <div class="panel-body">
+
+            <table ng-controller="alobProductListCtrl as vm">
+
+                <thead>
+
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-primary" ng-click="vm.toggleImage()"> <!-- <i class="fa fa-picture-o fa-fw"></i> -->
+                                 
+                                 {{ vm.showImage ? "Hide" : "Show" }} Image
+                            </button>
+                        </td>
+                        <td>Product</td>
+                        <td>Code</td>
+                        <td>Available</td>
+                        <td>Price</td>
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                    <tr ng-repeat="product in vm.products">
+                        <td>
+                            <img ng-if="vm.showImage"
+                                 ng-src="{{product.imageUrl}}"
+                                 style="width:50px;margin:2px"
+                                 title="{{product.productName}}">
+                        </td>
+                        <td>{{product.productName}}</td>
+                        <td>{{product.productCode}}</td>
+                        <td>{{product.releaseDate}}</td>
+                        <td>{{product.price | currency}}</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
