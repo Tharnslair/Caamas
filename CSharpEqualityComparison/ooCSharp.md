@@ -79,4 +79,20 @@ Constructors
 
 ---
 
+**Inheritance**
+
+> Also referred to as specialization
+
+---
+
+Base Class : Customer
+
+Derived or Child Classes (derive functionality from the base class):
+(has an "is a" relationship with base class)
+- Residential
+- Business
+- Government
+- Educator
+
+---
 ---
